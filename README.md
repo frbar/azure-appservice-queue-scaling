@@ -31,7 +31,7 @@ az webapp deployment source config-zip --src .\publish.zip -n "$($envName)-app" 
 
 # Test
 
-Using the `Service Bus Explorer` (Azure Portal), send 30 messages into the `jobs` queue. They will be dequeued at a rate of 20 per minute (1 every 5 sec). Scaling rule wil kick in quickly and scale-out to 2 instances. Scale-in will then happen in 5/6 minutes. 
+Using the `Service Bus Explorer` (Azure Portal), send 30 messages into the `jobs` queue. They will be dequeued at a rate of 20 per minute (1 every 5 sec). Scaling rule will kick in quickly and scale-out to 2 instances. Scale-in will then happen in 5/6 minutes. See Bicep file for configuration.
 
 ![Run History](doc/run-history.png)
 
